@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-Jul-2021, 11:19:04 AM
+    Author     : srvad
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF ;
+    background-color: #f1f3fb;
+    color: #0D0221;
+    margin-left: 20px;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+.welcomeHeader{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*  Form  */
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 460px;
+  min-height: 500px;
+  max-height: 500px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(153, 153, 153, 0.25);
+  padding: 0.75rem;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+.card-form {
+  padding: 0rem 1rem 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+}
+.input + .input {
+  margin-top: 0.5rem;
+}
+
+.input-label {
+  color: #6658d3;
+  position: absolute;
+  top: 1.5rem;
+  transition: 0.25s ease;
+  font-size: 0.9rem;
+}
+
+.dropdownOne{
+    margin-top: 22px;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.25rem 0;
+}
+
+.input-field:focus, .input-field:valid {
+  outline: 0;
+  border-bottom-color: #6658d3;
+}
+
+.input-field:focus + .input-label, .input-field:valid + .input-label {
+  color: #6658d3;
+  transform: translateY(-1.5rem);
+}
+
+/*  Buttons */
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1;
+
+  padding: 0.6em 1.4em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.second {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    border-color: #2ecc71;
+    color: #2ecc71;
+}
+
+.second:hover{
+    box-shadow: 0 0 40px 40px #2ecc71 inset;
+    
+}
+
+.login-user-pass{
+    text-align: center;
+    
+}
+
+@media screen and (max-width:510px) {
+    .card{
+        max-width: 85%;
+    }
+}
+
+
